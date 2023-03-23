@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title></title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}" href="../static/css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" href="../static/css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" th:href="@{css/responsive.css}" href="../static/css/responsive.css">
+    <!-- fevicon -->
+    <!--<link rel="icon" href="images/fevicon.png" type="image/gif" />-->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/Leaverou/awesomplete/gh-pages/awesomplete.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" th:href="@{/css/jquery.mCustomScrollbar.min.css}"
+          href="../static/css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+    <link rel="icon" href="../static/img/icon.png" th:href="@{/img/icon.png}" type="image/x-icon">
+    <link rel="stylesheet" th:href="@{/css/owl.carousel.min.css}" href="../static/css/owl.carousel.min.css">
+    <link rel="stylesoeet" th:href="@{/css/owl.carousel.min.css}" href="../static/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+          media="screen">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/searchPage.css}" href="../static/css/searchPage.css">
+</head>
+<body>
+<div class="banner_section layout_padding">
+    <div class="container">
+        <h1 class="best_taital">MyDictionary</h1>
+        <div class="box_main" style="width: 70%;">
+            <form href th:action="@{/send}" method="post"class="searchBar">
+                <a href="#" id="searchBtn">
+                    <img src="../static/img/picwish.png" th:src="@{/img/picwish.png}" id="search-img">
+                </a>
+                <input type="text" class="awesomplete email_bt" placeholder="search" name="res" data-minchars="1" data-list="#predict-list" data-maxitems="6" autocomplete="off">
+                <img id="cute-img" src="../static/img/cute1.gif" th:src="@{/img/cute1.gif}">
+                <datalist id="predict-list">
+                    <option>迪麗熱巴</option>
+                </datalist>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script th:src="@{/js/jquery.min.js}" src="../static/js/jquery.min.js"></script>
+<script th:src="@{/js/popper.min.js}" src="../static/js/popper.min.js"></script>
+<script th:src="@{/js/bootstrap.bundle.min.js}" src="../static/js/bootstrap.bundle.min.js"></script>
+<script th:src="@{/js/jquery-3.0.0.min.js}" src="../static/js/jquery-3.0.0.min.js"></script>
+<script th:src="@{/js/plugin.js}" src="../static/js/plugin.js"></script>
+<!-- sidebar -->
+<script th:src="@{/js/jquery.mCustomScrollbar.concat.min.js}"
+        src="../static/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script th:src="@{/js/custom.js}" src="../static/js/custom.js"></script>
+<!-- javascript -->
+<script th:src="@{/js/owl.carousel.js}" src="../static/js/owl.carousel.js"></script>
+<script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+<script th:inline="javascript">
+    $(document).ready(function () {
+        $(".fancybox").fancybox({
+            openEffect: "none",
+            closeEffect: "none"
+        });
+    })
+</script>
+<script src="https://cdn.rawgit.com/Leaverou/awesomplete/gh-pages/awesomplete.min.js"></script>
+</body>
+</html>
